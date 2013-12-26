@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+# Project Euler
+# Problem 9
+# Special Pythagorean triplet
+
 for a in range(1, 1001):
     for b in range(a, 1001):
         c = 1000 - a - b
