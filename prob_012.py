@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+# Project Euler
+# Problem 12
+# Highly divisible triangular number
+
+# Around 24 hours runtime, very inefficient
 
 n = 0
 m = 1
