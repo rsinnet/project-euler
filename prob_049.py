@@ -33,9 +33,41 @@ for i in range(len(foo)):
             biglist.append(z)
     bar[foo[i]] = list(set(bar[foo[i]]))
 
-baz = dict()
+baf = dict()
+for x, l in bar.iteritems():
+    if len(l) > 2:
+        print x, l
+        baf[x] = l
+
+print
+print
 
 # Iterate through each element in the dict and do subtraction
+baz = dict()
+for x, l in baf.iteritems():
+    baz[x] = []
+    for a in range(len(l)):
+        if a == len(l) - 1:
+            continue
+        for b in range(a+1, len(l)):
+            baz[x].append(abs(l[a] - l[b]))
+
+    #if len(baz[x]) != len(set(baz[x])):
+    #    print x, baz[x]
+
+
+for x, l in baz.iteritems():
+    for y in list(set(baz[x])):
+        baz[x].remove(y)
+
+for x, l in baz.iteritems():
+    if len(l) > 0:
+        print x, l
+
+
+"""
+# Iterate through each element in the dict and do subtraction
+baz = dict()
 for x, l in bar.iteritems():
     baz[x] = []
     for a in range(len(l)):
@@ -55,3 +87,4 @@ for x, l in baz.items():
 print wag
 
 print bar[2699]
+"""
