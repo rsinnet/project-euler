@@ -41,12 +41,6 @@ for i in range(1, len(t)):
                 pass
         y[i][x[j]] += max_last
         sum_paths[i][x[j]] = last_path + [x[j]]
-print
-print y
 
-print
-print sum_paths
-
-print
 # Find longest path:
 print max([v for k, v in y[-1].iteritems()])
