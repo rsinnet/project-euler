@@ -3,7 +3,7 @@
 
 import itertools
 
-n = 10000
+n = int(10000)
 i = 2
 
 comp_nums = [False] * n
@@ -18,9 +18,7 @@ while i <= n / 2:
 foo = [j+1 for j, y in enumerate(comp_nums) if not y and j+1 >= 1000]
 
 bar = dict()
-
 biglist = []
-
 for i in range(len(foo)):
     if foo[i] in biglist:
         continue
@@ -62,7 +60,8 @@ for x, l in baz.iteritems():
 
 for x, l in baz.iteritems():
     if len(l) > 0:
-        print x, l
+        if 3330 in l:
+            print x, l
 
 
 """
