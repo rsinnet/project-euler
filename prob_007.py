@@ -1,5 +1,8 @@
 #!/usr/bin/python
-#unsolved
+
+# Project Euler
+# Problem 7
+# 10001st prime
 
 import math
 
