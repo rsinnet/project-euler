@@ -1,5 +1,9 @@
 #!/usr/local/bin/node
 
+// Project Euler
+// Problem 49
+// Prime permutations
+
 var _ = require('./underscore');
 var comp_nums = _.map(_.range(10000), function() { return false; });
 
