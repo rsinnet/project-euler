@@ -52,4 +52,4 @@ _.each(_.range(1000000), function (x) {
     console.log(x + ":  " + (seq.length-1+baz));
 
 });
-console.log(count);
+console.log(count + " numbers containing 60 non-repeating terms!");
